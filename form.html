@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Page</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+
+	<form>
+		<label for="first">First Name</label>
+		<input id="first" type="text" name="first" placeholder="First Name" required>
+		<label for="last">Last Name</label>
+		<input id="last" type="text" name="last" placeholder="Last Name" required>
+
+		<div>
+			<label for="male" >male</label>
+			<input id="male" type="radio" name="Gender" value="male">
+			<label for="female" >female</label>
+			<input id="female" type="radio" name="Gender" value="female">
+			<label for="other" >other</label>
+			<input id="other" type="radio" name="Gender" value="other">
+		</div>
+
+		<div>
+			<label for="email ">Email</label>
+			<input id="email" type="email" name="email" placeholder="Email" required>
+			<label for="password">password</label>
+			<input type="password" name="password" placeholder="password" required pattern=".{5,10}" title="5 to 10 characters">
+		</div>
+
+		<div>
+		<label id="Birthday">Birthday</label>
+		<select name="month">
+			<option>month</option>
+			<option>Frebuary</option>
+			<option>march</option>
+			<option>april</option>
+			<option>may</option>
+			<option>june</option>
+			<option>july</option>
+			<option>august</option>
+			<option>september</option>
+			<option>october</option>
+			<option>november</option>
+			<option>december</option>
+		</select>
+		<select name="day">
+			<option>day</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+		</select>
+		<select name="year">
+			<option>year</option>
+			<option>1993</option>
+			<option>1994</option>
+			<option>1995</option>
+			<option>1996</option>
+		</select>
+		</div>
+
+		<label for="terms">I agree to the terms and conditions</label>
+		<input id="terms" type="checkbox" name="agreed">
+
+		<div>
+		<input type="submit" name="submit">
+		</div>
+	</form>
+
+
+</body>
+</html>
